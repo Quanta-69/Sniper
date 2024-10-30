@@ -1,0 +1,68 @@
+.plans{
+    flex-direction: column;
+    & .wrapper{
+        padding-block: 20px;
+        & .card-wrap{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            & .card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                flex-direction: column;
+                width: 100%;
+                max-width: 350px;
+                height: 450px;
+                padding-inline: 50px;
+                border-radius: .5cm;
+                background-color: var(--secondary-color);
+
+                &
+                h1{
+                    color: var(--highlight-color);
+                    text-transform: uppercase;
+                }
+                h2{
+                    color: var(--light-text);
+                    & span{
+                        color: var(--highlight-color);
+                    }
+                } 
+                li{
+                    align-self: flex-start;
+                    list-style-type: none;
+                    font-size: var(--btn-font);
+                    letter-spacing: 1px;
+                }
+                li::before{
+                    content: '';
+                    display: inline-block;
+                    width: 25px;              /* Set width */
+                    height: 25px;             /* Set height */
+                    margin-right: 0.5em;      /* Space between bullet and text */
+                    background-image: url(../assets/check.svg); /* Replace with your SVG path */
+                    background-size: contain; /* Ensure it scales correctly */
+                    background-repeat: no-repeat;
+                }
+                button{
+                    margin-block: 10px;
+                }
+            }
+            .card:nth-child(1){
+                
+            }
+            .card:nth-child(2){
+                max-width: 370px;
+                height: 500px;
+                border: 3px solid var(--highlight-color);
+            }
+            .card:nth-child(3){}
+        }
+    }
+}

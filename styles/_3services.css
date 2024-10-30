@@ -1,0 +1,92 @@
+.service{
+    flex-direction: column;
+
+    & 
+    .wrapper{
+        padding-block: 20px;
+        gap: 20px;
+        & 
+        .card-wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            & .card{
+                background: var(--secondary-color);
+                border-radius: .5cm;
+                width: 100%;
+                max-width: 600px;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 15px;
+    
+                & .pic{
+                    border-top-left-radius: inherit;
+                    border-bottom-left-radius: inherit;
+                    width: 35%;
+                    background: white;
+                    height: 300px;
+                }
+                .pic:hover{
+                    width: 70%;
+                }
+                .text-content{
+                    width: 60%;
+                    padding-inline: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+    
+                    & h1{
+                        color: var(--highlight-color);
+                        font-size: var(--sm-font);
+                    }
+                    h2{
+                        font-size: var(--btn-font);
+                        letter-spacing: 1px;
+                    }
+                }
+                .pic-1{
+                    background: url(../assets/skulls.jpeg) center/cover;
+                }
+                .pic-2{
+                    background: url(../assets/smoked_chicken.jpg) center/cover;
+                }
+                .pic-3{
+                    background: url(../assets/gang_shit.jpg) center/cover;
+                }
+                .pic-4{
+                    background: url(../assets/unknown_x.jpg) center/cover;
+                }
+                .pic-5{
+                    background: url(../assets/everybody_falla.jpg) center/cover;
+                }
+                .pic-6{
+                    background: url(../assets/true_love.jpg) center/cover;
+                }
+            }
+        } 
+        .hire{
+            margin-top: 20px;
+            width: 100%;
+            background-color: var(--primary-color);
+            padding-block: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            & h1{
+                color: var(--accent-color);
+                text-transform: uppercase;
+                font-size: var(--md-font);
+            }
+        }
+       
+    }
+    
+}

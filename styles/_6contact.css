@@ -1,0 +1,13 @@
+.contact{
+    flex-direction: column;
+
+    & 
+    .wrapper{
+        flex-wrap: wrap;
+
+        & .card-wrap, .message-wrap{
+            width: 50%;
+            border: 1px solid lime;
+        }
+    }
+}

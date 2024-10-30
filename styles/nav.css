@@ -1,0 +1,37 @@
+nav{
+    padding-block: 10px;
+    padding-inline-end: 100px;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+
+    & ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 40px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    li{
+        list-style-type: none;
+        letter-spacing: 1px;
+        background: none;
+        padding: 5px 20px;
+    }
+    li:hover{
+        background: var(--accent-color);
+    }
+    li:active{
+        transform: translateY(-3px);
+    }
+}
